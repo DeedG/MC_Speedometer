@@ -1,6 +1,6 @@
 # Speedometer
 
-Mod Fabric **100 % côté client** pour Minecraft **26.3** : affiche ta vitesse horizontale en blocs par seconde à la place du niveau d'XP, uniquement quand tu bouges. Dès que tu t'arrêtes, le niveau d'XP vanilla revient.
+Mod Fabric **100 % côté client** pour Minecraft **26.3** : affiche ta vitesse horizontale (en blocs par seconde, sans unité) à la place du niveau d'XP, uniquement quand tu bouges. Dès que tu t'arrêtes, le niveau d'XP vanilla revient.
 
 Aucun mixin, aucun paquet réseau : fonctionne sur n'importe quel serveur (vanilla, Paper, etc.) sans rien installer côté serveur.
 
@@ -32,7 +32,7 @@ La couleur glisse progressivement d'un palier à l'autre (vitesses tirées du [w
 
 ## Fonctionnement
 
-La vitesse est mesurée à partir du déplacement réel de la position du joueur entre deux ticks (moyenne glissante sur 5 ticks), donc elle marche aussi en véhicule (bateau, cheval, minecart…) et en élytre. Les téléportations sont ignorées. Rien n'est affiché en spectateur.
+La vitesse est mesurée à partir du déplacement réel de la position du joueur entre deux ticks (moyenne glissante sur 0,5 s, chiffre rafraîchi 5 fois par seconde), donc elle marche aussi en véhicule (bateau, cheval, minecart…) et en élytre. Les téléportations sont ignorées. Rien n'est affiché en spectateur.
 
 ## Compiler
 
