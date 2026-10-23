@@ -34,7 +34,7 @@ public class SpeedometerClient implements ClientModInitializer {
 
 		// Dessine la vitesse au même endroit. Attaché à la barre contextuelle plutôt qu'au niveau d'XP,
 		// pour que l'affichage marche aussi au niveau 0 et en créatif (où le niveau n'est jamais dessiné).
-		HudElementRegistry.attachElementAfter(VanillaHudElements.INFO_BAR_FOREGROUND,
+		HudElementRegistry.attachElementAfter(VanillaHudElements.INFO_BAR,
 				Identifier.fromNamespaceAndPath(MOD_ID, "speed"), SpeedometerClient::extractSpeed);
 	}
 
