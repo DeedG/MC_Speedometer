@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"id": "speedometer",
+	"version": "${version}",
+	"name": "Speedometer",
+	"description": "Affiche ta vitesse horizontale (blocs/s) à la place du niveau d'XP quand tu bouges. 100 % côté client : fonctionne sur n'importe quel serveur.",
+	"authors": ["DeedG"],
+	"contact": {
+		"sources": "https://github.com/DeedG/MC_Speedometer"
+	},
+	"license": "MIT",
+	"icon": "assets/speedometer/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"fr.deedg.speedometer.SpeedometerClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
