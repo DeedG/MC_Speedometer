@@ -32,7 +32,7 @@ La couleur glisse progressivement d'un palier à l'autre (vitesses tirées du [w
 
 ## Fonctionnement
 
-La vitesse est mesurée à partir du déplacement réel de la position du joueur entre deux ticks (moyenne sur les dernières 1,2 s, soit deux cycles de sprint-saut, chiffre rafraîchi 5 fois par seconde), donc elle marche aussi en véhicule (bateau, cheval, minecart…) et en élytre. La vitesse est horizontale au sol (les sauts ne la gonflent pas) et en 3D en élytre, en vol et en nage. Les téléportations et le fait de monter/descendre d'un siège (coussin, bateau, cheval…) sont ignorés. Rien n'est affiché en spectateur.
+La vitesse est mesurée à partir du déplacement réel de la position du joueur entre deux ticks (moyenne sur les dernières 1,2 s, soit deux cycles de sprint-saut, chiffre rafraîchi 5 fois par seconde), donc elle marche aussi en véhicule (bateau, cheval, minecart…) et en élytre. La vitesse est horizontale au sol (les sauts ne la gonflent pas) et en 3D en élytre, en vol et en nage. Les déplacements par sauts (highway de coussins) sont mesurés comme distance entre deux coussins / temps entre deux clics. Les téléportations (> 20 blocs en un tick) sont ignorées. Rien n'est affiché en spectateur.
 
 ## Compiler
 
