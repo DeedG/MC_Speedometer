@@ -50,7 +50,7 @@ public class SpeedometerClient implements ClientModInitializer {
 
 		Font font = Minecraft.getInstance().font;
 		double speed = SpeedTracker.getDisplayedSpeed();
-		String text = String.format(Locale.ROOT, speed < 10 ? "%.2f" : "%.1f", speed);
+		String text = String.format(Locale.ROOT, "%.1f", speed);
 
 		int color;
 		int outline;
